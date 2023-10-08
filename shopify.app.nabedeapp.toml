@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "nabedeapp"
+client_id = "d08d858027042585b220dc6e0c67288c"
+application_url = "https://kb-bedford-we-discover.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://kb-bedford-we-discover.trycloudflare.com/auth/callback",
+  "https://kb-bedford-we-discover.trycloudflare.com/auth/shopify/callback",
+  "https://kb-bedford-we-discover.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nabedeecom.myshopify.com"
